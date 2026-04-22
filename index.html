@@ -1,51 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fallaguene</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <!-- Rend la page adaptable aux petits écrans -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fallaguene — Boutique de Chaussures</title>
+  <!-- On relie le fichier CSS à cette page -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="nav_container">
-            <div class="nav-left">
-                <form action="" class="search-bar">
-                    <input type="search" placeholder="Rechercher">
-                </form>
-                <div class="cart-icon">
-                    <img src="media/icon/Shopping-Cart-02-256.png" alt="">
-                </div>
-                <ul>
-                    <li><a href="Contacte">CONTACT</a></li>
-                </ul>
-            </div>
 
-            <div class="nav-logo">
-                <h1>Fallaguene</h1>
-            </div>
+  <!-- HEADER — En-tête , logo et navigation-->
+  <header>
+    <nav>
 
-            <div class="nav-right">
-                <ul>
-                    <li><a href="HOMMES">HOMMES</a></li>
-                    <li><a href="FEMMES">FEMMES</a></li>
-                    <li><a href="ENFANTS">ENFANTS</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    
-    <section class="bacvid">
-        <video autoplay muted loop playsinline class="arvid" src="media/video/parfait.mp4"></video>
-          <div class=" hero-content">
-            <div class=" hero-left">
-              <p class="pttex">"Les mots ci-dessous premettent d'  "</p>
-              <h1 class="grtex"><a href="essentiel.html">Effleurer l'Essentiel</a></h1>
+      <!-- Liens de gauche -->
+      <ul>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Logo au centre -->
+      <a href="index.html" class="logo">FALLAGUENE</a>
+
+      <!-- Liens de droite -->
+      <ul>
+        <li><a href="hommes.html">Hommes</a></li>
+        <li><a href="femmes.html">Femmes</a></li>
+        <li><a href="enfants.html">Enfants</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+
+  <!-- MAIN , Contenu principal de la page-->
+  <main>
+
+    <!-- SECTION 1 : Héro —accueil -->
+    <section class="hero">
+      <h1>L'élégance à chaque pas</h1>
+      <p>
+        Découvrez notre sélection de chaussures pour hommes, femmes et enfants.
+        Style, confort et qualité réunis.
+      </p>
+      <!-- Bouton vers la collection hommes -->
+      <a href="hommes.html" class="bouton">Voir la collection</a>
+    </section>
+
+
+    <!-- SECTION 2 : Nos 3 catégories -->
+    <section class="categories">
+      <h2>Nos univers</h2>
+      <p>Choisissez votre catégorie et explorez la collection</p>
+
+      <!-- Grille avec 3 cartes côte à côte -->
+      <div class="grille-categories">
+
+        <!-- Carte Hommes -->
+        <a href="hommes.html" class="carte-categorie">
+          <img
+            src="https://images.pexels.com/photos/6764994/pexels-photo-6764994.jpeg"
+            alt="Chaussures homme"
+          >
+          <div class="info">
+            <h3>Hommes</h3>
+            <p>Mocassins, derbies, boots et chaussures habillées.</p>
+            <span>Voir la collection →</span>
           </div>
-          <div class="hero-right">
-                <img src="media/video/choose.jfif" class="img-hero" alt="">
+        </a>
+
+        <!-- Carte Femmes -->
+        <a href="femmes.html" class="carte-categorie">
+          <img
+            src="https://images.pexels.com/photos/27426618/pexels-photo-27426618.jpeg"
+            alt="Chaussures femme"
+          >
+          <div class="info">
+            <h3>Femmes</h3>
+            <p>Escarpins, sandales, mules et ballerines élégantes.</p>
+            <span>Voir la collection →</span>
+          </div>
+        </a>
+
+        <!-- Carte Enfants -->
+        <a href="enfants.html" class="carte-categorie">
+          <img
+            src="https://images.pexels.com/photos/8457630/pexels-photo-8457630.jpeg"
+            alt="Chaussures enfant"
+          >
+          <div class="info">
+            <h3>Enfants</h3>
+            <p>Baskets, bottines et chaussures confortables pour les enfants.</p>
+            <span>Voir la collection →</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION 3 : Produits mis en avant -->
+    <section class="section-produits" style="background-color: #f0ece6;">
+      <h2>Nos coups de cœur</h2>
+      <p class="sous-titre">Une sélection de nos meilleurs modèles du moment</p>
+
+      <div class="grille-produits">
+
+        <!-- Produit 1 -->
+        <div class="carte-produit">
+          <img
+            src="https://images.pexels.com/photos/9992899/pexels-photo-9992899.jpeg"
+            alt="Loafer Signature Noir"
+          >
+          <div class="corps">
+            <span class="badge-promo">-22%</span>
+            <h3>Loafer Signature Noir</h3>
+            <p class="description">Un classique chic avec une belle finition texturée.</p>
+            <div class="ligne-prix">
+              <div>
+                <span class="ancien-prix">129,90 €</span><br>
+                <span class="prix-actuel">99,90 €</span>
+              </div>
+              <button class="btn-panier">+ Panier</button>
+            </div>
           </div>
         </div>
+
+        <!-- Produit 2 -->
+        <div class="carte-produit">
+          <img
+            src="https://images.pexels.com/photos/5168531/pexels-photo-5168531.jpeg"
+            alt="Ballerines Rose Élégance"
+          >
+          <div class="corps">
+            <span class="badge-promo">-18%</span>
+            <h3>Ballerines Rose Élégance</h3>
+            <p class="description">Une touche délicate et féminine pour la collection mode.</p>
+            <div class="ligne-prix">
+              <div>
+                <span class="ancien-prix">89,90 €</span><br>
+                <span class="prix-actuel">73,90 €</span>
+              </div>
+              <button class="btn-panier">+ Panier</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produit 3 -->
+        <div class="carte-produit">
+          <img
+            src="https://images.pexels.com/photos/12955703/pexels-photo-12955703.jpeg"
+            alt="Sneakers Mini Street"
+          >
+          <div class="corps">
+            <span class="badge-promo">-25%</span>
+            <h3>Sneakers Mini Street</h3>
+            <p class="description">Fun et confortables pour bouger toute la journée.</p>
+            <div class="ligne-prix">
+              <div>
+                <span class="ancien-prix">59,90 €</span><br>
+                <span class="prix-actuel">44,90 €</span>
+              </div>
+              <button class="btn-panier">+ Panier</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
+
+  </main>
+
+
+  <!--FOOTER — Pied de page-->
+  <footer>
+    <p>© 2025 Fallaguene — Boutique de chaussures</p>
+    <div class="liens-footer">
+      <a href="hommes.html">Hommes</a>
+      <a href="femmes.html">Femmes</a>
+      <a href="enfants.html">Enfants</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
 </body>
 </html>
